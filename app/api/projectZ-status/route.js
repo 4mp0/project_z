@@ -1,7 +1,7 @@
 
 export async function GET() {
   try {
-    const res = await fetch('https://projectz-swart.vercel.app/'); 
+    const res = await fetch('https://projectz-swart.vercel.app/home'); 
     const data = await res.text();
     return new Response(data, {
       status: res.status,
