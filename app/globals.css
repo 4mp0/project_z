@@ -19,8 +19,32 @@
   }
 }
 
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
+  background-image: url('../public/bg.jpg');
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }

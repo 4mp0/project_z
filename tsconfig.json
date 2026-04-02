@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "_components/NavPane.js"  ],
   "exclude": ["node_modules"]
 }
